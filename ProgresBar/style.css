@@ -1,0 +1,96 @@
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+body{
+
+    background: color #e3edf7;
+    height: 100VH;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.skill{
+
+    width: 160px;
+    height: 160px;
+    position: relative;
+}
+
+.outer{
+
+    height: 160px;
+    width: 160px;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255,255, 0.7);
+    border-radius: 50%;
+    
+
+}
+
+.inner{
+
+    height: 120px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgba(255,255,255, 0.7),
+    inset -0.5px -0.5px,6px -1px  rgba(255,255,255,0.7),
+    inset 0.5px 0.5px 6px -1px rgba(0, 0, 0, 0.15),
+    inset 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+
+    border-radius: 50%;
+
+}
+
+#number{
+
+    font-weight: 600;
+    color: #555;
+    font-size: 30px;
+}
+
+circle{
+
+    fill: none;
+    stroke-width: 20px;
+    stroke-dasharray: 50;
+    stroke-dashoffset: 450;
+    stroke: #ff00cc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    animation: anime  linear forwards ;
+    animation-duration: 5s;
+
+
+}
+
+
+@keyframes anime {
+
+    100%{
+
+        stroke-dashoffset: 157.5;
+    }
+    
+}
+
+svg{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+    
